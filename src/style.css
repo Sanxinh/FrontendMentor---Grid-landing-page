@@ -8,13 +8,45 @@
 body {
     background-color: hsl(228, 99%, 58%);
     color: beige;
+    
     }
 a {
-    color:aliceblue
+    color:aliceblue;  
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: solid 2px beige; 
 }
 
 main {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     height: 50vh;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    border: solid 2px beige; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.main-section {
+   display: grid;
+   
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: solid 2px beige; 
 }
